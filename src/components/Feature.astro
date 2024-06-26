@@ -1,0 +1,22 @@
+---
+interface Props {
+    icon: string
+    title: string;
+    description: string
+}
+
+const {icon, title, description} = Astro.props;
+---
+<div class="xl:w-4/12 xl:basis-4/12 lg:w-4/12 lg:basis-4/12 md:w-6/12 md:basis-6/12 sm:w-full sm:basis-full xsm:w-full xsm:basis-full relative px-[15px]"
+     data-aos="fade-up" data-aos-duration="1200">
+    <div class="block-style-forty text-center mt-[30px]">
+        <div class="icon rounded-circle flex items-center justify-center m-auto bg-white w-20 h-20 rounded-[50%]
+								 lg:w-[55px] lg:h-[55px] lg:p-[15px]
+								 md:w-[55px] md:h-[55px] md:p-[15px]
+								 sm:w-[55px] sm:h-[55px] sm:p-[15px]
+								 xsm:w-[55px] xsm:h-[55px] xsm:p-[15px]"><img src="/images/icon/{icon}" alt="">
+        </div>
+        <h4 class="font-medium text-[24px] m-[30px_0_20px]">{title}</h4>
+        <p class="xl:px-[3rem]">{description}</p>
+    </div>
+</div>

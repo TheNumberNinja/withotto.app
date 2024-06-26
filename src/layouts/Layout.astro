@@ -1,0 +1,71 @@
+---
+import PricingTable from "../components/PricingTable.astro";
+interface Props {
+    title: string;
+}
+
+import "../styles/style.css";
+import "../styles/flaticon.css";
+import "../styles/menu.css";
+
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Features from "../components/Features.astro";
+import Cta from "../components/Cta.astro";
+import Footer from "../components/Footer.astro";
+
+const {title} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords"
+          content="">
+    <meta name="description"
+          content="">
+    <meta property="og:site_name" content="With Otto">
+    <meta property="og:url" content="https://withotto.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="With Otto: Smart bookkeeping for your practice">
+    <!--<meta name="og:image" content="images/assets/ogg.png">-->
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Responsive Device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For Window Tab Color -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <!--<meta name="theme-color" content="#7034FF">-->
+    <!-- Windows Phone -->
+    <!--<meta name="msapplication-navbutton-color" content="#7034FF">-->
+    <!-- iOS Safari -->
+    <!--<meta name="apple-mobile-web-app-status-bar-style" content="#7034FF">-->
+    <title>{title}</title>
+    <!-- Favicon -->
+    <!--<link rel="icon" type="image/png" sizes="56x56" href="/favicon.svg">-->
+    <!-- Main style sheet -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500&display=swap"
+            rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="./vendor/slick/slick.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="./vendor/animate.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="./vendor/aos-next/dist/aos.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="./vendor/fancybox/dist/jquery.fancybox.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="./fonts/icon/font/flaticon.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="./css/custom-animation.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="./css/flowbite.min.css">-->
+</head>
+<body>
+<div class="main-page-wrapper overflow-x-hidden p-0">
+    <Header></Header>
+    <slot></slot>
+    <Footer></Footer>
+</div>
+<script src="/js/theme.js" is:inline></script>
+</body>
+</html>
