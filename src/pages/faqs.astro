@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 ---
-<Layout title="With Otto | FAQs">
+<Layout title="With Otto | FAQs" wrapperClasses="pt-[150px] md:pt-[90px] sm:pt-[90px] xsm:pt-[90px]">
     <div class="faqs-inner-page relative z-[5] pt-[170px] pb-[185px] px-0 bg-[linear-gradient(45deg,#FFFBF2,#EDFFFD)] md:p-[80px_0_70px] sm:p-[80px_0_70px] xsm:p-[80px_0_70px]">
         <img src="/images/shape/66.svg" alt=""
              class="shapes shape-one absolute z-[-1] bottom-[-140px] animate-[jumpTwo_5s_infinite_linear] left-0 block sm:hidden xsm:hidden">
@@ -11,14 +11,14 @@ import Layout from "../layouts/Layout.astro";
         <div class="container">
             <div class="flex flex-wrap mx-[-15px]">
                 <div class="xl:w-11/12 xl:basis-11/12 lg:w-11/12 lg:basis-11/12 md:w-full md:basis-full sm:w-full sm:basis-full xsm:w-full xsm:basis-full relative px-[15px] m-auto">
-                    <div class="faqs-header pb-[60px]  md:pb-[50px] sm:pb-[50px] xsm:pb-[50px]">
+                    <div class="faqs-header">
                         <div class="flex flex-wrap mx-[-15px]">
-                            <div class="">
+                            <div class="xl:w-6/12 xl:basis-6/12 lg:w-6/12 lg:basis-6/12 relative px-[15px]">
                                 <div class=" flex">
                                     <img src="/images/icon/48.svg" alt=""
                                          class="icon h-[55px] mr-8 lg:hidden md:hidden sm:hidden xsm:hidden">
-                                    <div class="md:mb-[30px] sm:mb-[30px] xsm:mb-[30px]">
-                                        <h3 class=" text-[36px] font-gilroy-semibold">FAQs</h3>
+                                    <div>
+                                        <h3 class=" text-[36px]">FAQs</h3>
                                         <p class="collection-preview text-[20px] leading-[1.6em] pb-[25px]">Everything
                                             you need to know about working with Otto</p>
                                     </div>
@@ -36,7 +36,10 @@ import Layout from "../layouts/Layout.astro";
                                         need to get started with Otto?</h3>
                                     <p class="pb-2">You'll need to:</p>
                                     <ul class=" list-disc pl-[18px]">
-                                        <li>Create bank rules/make sure you're happy with your existing ones.</li>
+                                        <li>Create bank rules/make sure you're happy with your existing ones. We've made
+                                            a <a href="/files/Bank%20rules%20quick%20guide.pdf" class="underline">quick
+                                                guide</a> to help you with this.
+                                        </li>
                                         <li>Invite Otto to your Xero practice.</li>
                                         <li>Give him access to your chosen clients. We'll help you with this on the
                                             onboarding call.
@@ -119,9 +122,8 @@ import Layout from "../layouts/Layout.astro";
                                             and invoices but we plan to introduce transfer matching later.
                                         </li>
                                         <li><b>Other possible matches</b> Otto will skip a possible match if there are
-                                            multiple possible matches for the payment. This <i>may</i>
-                                            change in future but we'd need to make sure Otto would be able to
-                                            make the right decision.
+                                            multiple possible matches for the payment. We're working to make this
+                                            feature available shortly.
                                         </li>
                                         <li><b>Multiple bills or invoices for a single payment</b> It often requires
                                             specific knowledge of your client to make the correct decision so Otto is
@@ -157,6 +159,9 @@ import Layout from "../layouts/Layout.astro";
                                         helpful where the sales invoice or receipt has been generated outside of
                                         Xero, for platforms like Stripe. For companies with payroll, rules can
                                         normally be created for the wage payment, PAYE, and pension payments.</p>
+                                    <p>Read our <a href="/files/Bank%20rules%20quick%20guide.pdf" class="underline">quick
+                                        guide</a> for more ideas, as well as tips for making the most of rules and
+                                        avoiding unexpected issues.</p>
                                 </div>
                             </div> <!-- /.article-preview -->
                             <div class="article-preview  shadow-[0_15px_30px_rgba(23,59,40,0.05)] mb-[18px] p-[45px_40px] bg-white flex md:p-[45px_20px] sm:p-[45px_20px] xsm:p-[45px_20px] ">

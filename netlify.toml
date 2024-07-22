@@ -1,0 +1,8 @@
+[build]
+command = "npm run build"
+publish = "dist"
+
+[[redirects]]
+from = "/sign-up/"
+to = "https://go.withotto.app/early-adopters-signup"
+status = 302
