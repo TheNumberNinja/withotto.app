@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="With Otto | Security and privacy">
+    <div class="terms_and_policy p-[120px_0] border-b-[#ECECEC] border-b border-solid md:p-[80px_0_0] sm:p-[80px_0_0] xsm:p-[80px_0_0]">
+        <div class="container">
+            <div class="flex flex-wrap mx-[-15px]">
+                <div class="xl:w-8/12 xl:basis-8/12 lg:w-8/12 lg:basis-8/12 md:w-full md:basis-full sm:w-full sm:basis-full xsm:w-full xsm:basis-full relative px-[15px]">
+                    <!-- Tab panes -->
+                    <div class="tab-content p-[0_0_0_50px] lg:pl-0 md:pl-0 sm:pl-0 xsm:pl-0">
+                        <div class="md:block md:opacity-100 md:mb-[60px]
+								sm:block sm:opacity-100 sm:mb-[60px]
+								xsm:block xsm:opacity-100 xsm:mb-[60px]
+								"role="tabpanel"aria-labelledby="opt1">
+                            <h2 class="font-bold text-[55px] pb-2.5
+									md:text-[38px]
+									sm:text-[38px]
+									xsm:text-[38px]">Security and privacy</h2>
+                            <div class="update-date text-[16px] text-[rgba(0,0,0,0.4)] mb-5">
+                                Last updated: 3 September 2024<br>
+                                <a href="/files/With%20Otto%20security%20and%20privacy%20guide.pdf" class="underline">Download this page as a PDF</a>
+                            </div>
+
+                            <p class="leading-[34px] mb-[15px]">Security and privacy are key considerations for everything we do and we’ve taken steps to
+                                ensure that your data, and that of your clients, is safe. This guide explains some of those steps
+                                and can also be shared with your clients so they know their data is in good hands.</p>
+
+                            <h3 class="text-[28px] p-[50px_0_25px] font-semibold
+									md:text-[24px] md:p-[40px_0_20px]
+									sm:text-[24px] sm:p-[40px_0_20px]
+									xsm:text-[24px] xsm:p-[40px_0_20px]">Otto</h3>
+
+                            <p class="leading-[34px] mb-[30px]">
+                                <b>Unique to your practice</b><br>
+                                Each practice has its own Otto, who only works within that practice. Data is not shared
+                                between practices.
+                            </p>
+
+                            <p class="leading-[34px] mb-[15px]">
+                                <b>You have full control over access to clients</b><br>
+                                As with any other member of your team, Otto’s access to clients is managed through your Xero
+                                HQ account. Otto can only access a client if he has been given access. You can add and
+                                remove access to your clients at any time.
+                            </p>
+
+                            <p class="leading-[34px] mb-[15px]">
+                                <b>Access to Xero</b><br>
+                                Otto accesses Xero via a browser and logs in just like you do. His password is randomly
+                                generated and consists of a mix of upper and lowercase letters, numbers, and symbols. 2FA is
+                                also enabled. His login details are securely stored and encrypted.
+                            </p>
+                            <p class="leading-[34px] mb-[15px]">
+                                We recommend providing Otto with a Xero role that offers the minimum access possible. This
+                                is Standard for regular Xero business plans, and Managed Client for partner-only plans such as
+                                Ledger and Cashbook.
+                            </p>
+                            <p class="leading-[34px] mb-[30px]">
+                                Otto runs on a mixture of on-premise hardware in Cambridgeshire, UK and <a
+                                    href="https://aws.amazon.com"class="underline">Amazon Web Services</a> (AWS)
+                                servers in their London data centre.
+                            </p>
+
+                            <p class="leading-[34px] mb-[15px]">
+                                <b>Training and reconciliation data</b><br>
+                                The information used to train Otto, as well as the information displayed in the portal,
+                                is stored in a database hosted by <a href="https://supabase.com"class="underline">Supabase</a>.
+                                This data is stored in an AWS data centre in London.
+                            </p>
+                            <p class="leading-[34px]">
+                                The data used to train Otto is comprised of the following:<br>
+                                <b>Bank statement</b>
+                            </p>
+                            <ul class="list-disc ml-[15px] mb-[15px]">
+                                <li>Unique ID generated by Xero</li>
+                                <li>Transaction date</li>
+                                <li>Payee</li>
+                                <li>Reference</li>
+                                <li>Description</li>
+                            </ul>
+                            <p class="leading-[34px]">
+                                <b>Bill, invoice, or transfer</b>
+                            </p>
+                            <ul class="list-disc ml-[15px] mb-[30px]">
+                                <li>Unique ID generated by Xero</li>
+                                <li>Issue date</li>
+                                <li>Contact name</li>
+                                <li>Reference</li>
+                            </ul>
+
+
+                            <h3 class="text-[28px] p-[50px_0_25px] font-semibold
+									md:text-[24px] md:p-[40px_0_20px]
+									sm:text-[24px] sm:p-[40px_0_20px]
+									xsm:text-[24px] xsm:p-[40px_0_20px]">The portal</h3>
+
+                            <p class="leading-[34px] mb-[15px]">
+                                The portal is where you can view the work Otto has done, provide feedback, and manage
+                                all the settings that control what Otto will do for each of your clients.
+                            </p>
+                            <p class="leading-[34px] mb-[15px]">
+                                It is important that you create a strong password that you don’t use elsewhere. We also
+                                recommend using a password manager.
+                            </p>
+                            <p class="leading-[34px] mb-[15px]">
+                                The portal accesses the database using a unique username and password, over an encrypted
+                                connection. The server is hosted by <a href="https://www.hetzner.com" class="underline">Hetzner</a>
+                                in their Falkenstein, Germany data centre. A network firewall ensures that only web
+                                traffic will be received by the server. Any administrative activities can only be
+                                performed by a specific user when connecting from a specific IP address.
+                            </p>
+                        </div>
+                    </div> <!-- /.tab-content -->
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
