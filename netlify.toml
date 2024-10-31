@@ -6,3 +6,13 @@ publish = "dist"
 from = "/sign-up/"
 to = "https://go.withotto.app/early-adopters-signup"
 status = 302
+
+[[redirects]]
+from = "insight.js"
+to = "https://swetrix.org/swetrix.js"
+status = 200
+
+[[redirects]]
+from = "/insight/"
+to = "https://api.swetrix.com/log"
+status = 200
