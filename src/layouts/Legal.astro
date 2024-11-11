@@ -1,0 +1,31 @@
+---
+import Layout from "./Layout.astro";
+interface Props {
+    title: string;
+    header: string
+    lastUpdated: string;
+    wrapperClasses?: string;
+}
+
+const {title, header, lastUpdated, wrapperClasses} = Astro.props;
+---
+<Layout title={title} wrapperClasses={wrapperClasses}>
+    <div class="terms_and_policy p-[120px_0] border-b-[#ECECEC] border-b border-solid md:p-[80px_0_0] sm:p-[80px_0_0] xsm:p-[80px_0_0]">
+        <div class="container">
+            <div class="flex flex-wrap mx-[-15px]">
+                <div class="xl:w-8/12 xl:basis-8/12 lg:w-8/12 lg:basis-8/12 md:w-full md:basis-full sm:w-full sm:basis-full xsm:w-full xsm:basis-full relative px-[15px]">
+                    <div class="tab-content p-[0_0_0_50px] lg:pl-0 md:pl-0 sm:pl-0 xsm:pl-0">
+                        <div class="md:block md:opacity-100 md:mb-[60px]
+								sm:block sm:opacity-100 sm:mb-[60px]
+								xsm:block xsm:opacity-100 xsm:mb-[60px]">
+                            <h2 class="font-bold text-[55px] pb-2.5 md:text-[38px] sm:text-[38px] xsm:text-[38px]">{header}</h2>
+                            <div class="update-date text-[16px] text-[rgba(0,0,0,0.4)] mb-5">Last
+                                updated: {lastUpdated}</div>
+                            <slot></slot>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
