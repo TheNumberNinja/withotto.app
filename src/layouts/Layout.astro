@@ -65,22 +65,7 @@ const {title, wrapperClasses} = Astro.props;
 </div>
 <script src="/vendor/jquery.min.js" is:inline></script>
 <script src="/js/theme.js" is:inline></script>
-<script src="/insights.js" defer is:inline></script>
-<script is:inline>
-    document.addEventListener('DOMContentLoaded', function() {
-        swetrix.init('Kw6ZEJpjzsg4', {
-            apiURL: 'https://insights-api.withotto.app/log',
-        })
-        swetrix.trackViews()
-    })
-</script>
-
-<noscript>
-    <img
-            src="/insights/noscript?pid=Kw6ZEJpjzsg4"
-            alt=""
-            referrerpolicy="no-referrer-when-downgrade"
-    />
+<script src="https://insights.withotto.app/script.js" data-website-id="a61eaa00-0655-44f4-b569-35abf1099d21" defer is:inline></script>
 </noscript>
 </body>
 </html>
